@@ -1,0 +1,68 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    text-align: center;
+}
+th, td{
+    border: 1px solid black;
+    align-content: space-between;
+}
+tr{
+    display: table-row;
+}
+
+
+#header {
+    margin: 0 auto;
+    height: 100px;
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+#foundation{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ebebeb;
+    
+}
+
+#left{
+display: flex;
+padding: 0;
+}
+#right{
+    display: inline;
+}
+
+#pressure{
+    margin: auto;
+}
+
+.table{
+    text-align: center;
+    margin: auto;
+}
+
+#List2{
+    align-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+/* .thead-dark{
+    text-align: center;
+}
+
+#well{
+    text-align: center;
+} */
+
+
+
+
+
+
+
