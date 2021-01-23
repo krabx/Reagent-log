@@ -18,17 +18,13 @@ insert_table_mud();
 </head>
 <body>
 <div id="header">
-    <img src="picture.jpg" class="logo" alt="">
-    <div class="date">
-        <?php  echo date_online()?>
-    </div>
     <form action="" method="POST">
         <button type="submit" name="reagent_sample" class="btn btn-secondary">Внесение реагентов в таблицу</button>
         <button type="submit" name="cement_sample" class="btn btn-secondary">Внесение рецептуры тампонажных растворов в таблицу</button>
     </form>
     </div>
 <div id="foundation">
-    <div id="left_column">
+    <div id="left">
         <form action="" method="POST" id="List3">
             <table class="table table-bordered" id="mud_table2">
                 <thead>   
@@ -37,7 +33,7 @@ insert_table_mud();
                         </th>
                 </thead>
                 <tbody id="mud_tr1">
-                    <tr class="thead-dark">
+                    <tr>
                         <th colspan="3">Состав раствора</th>
                     </tr>
                     <tr>
@@ -81,8 +77,9 @@ insert_table_mud();
                         </td>
                     </tr>
             </table>
+
             <table class="table table-bordered">
-                <tr class="thead-dark">
+                <tr>
                     <th colspan="3">Результаты тестирования буровых растворов </th>
                 </tr>
                 <tbody>
@@ -252,11 +249,22 @@ insert_table_mud();
                 td1.innerHTML = '<input type="text" name="mud_material[]" class="form-control">';
                 var td2 = document.createElement('td');
                 td2.innerHTML = '<input type="text" name="mud_concentration[]" class="form-control">';
-                tr.appendChild(td)
+                var deleteButton = document.createElement('button');
+                deleteButton.setAttribute('type','button');
+                var td3 = document.createElement('td');
+                td3.append(deleteButton);
+                td3.setAttribute('class','tdBorder')
+                tr.appendChild(td);
                 tr.appendChild(td1);
                 tr.appendChild(td2);
+                tr.appendChild(td3);
                 trInput.append(tr);
+                deleteButton.onclick = function(){
+                    trInput.removeChild(tr);
+                }
             });
+            
+           
                 </script>
 </body>
 </html>

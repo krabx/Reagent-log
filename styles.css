@@ -3,6 +3,9 @@ html, body{
     padding: 0;
     align-items: center;
     text-align: center;
+    background-image: url('https://images.wallpaperscraft.ru/image/gradient_fon_raznotsvetnyj_144504_1920x1080.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 th, td{
     border: 1px solid black;
@@ -16,7 +19,6 @@ tr{
 #header {
     margin: 0 auto;
     height: 100px;
-    background-color: #ebebeb;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -25,7 +27,7 @@ tr{
 #foundation{
     display: flex;
     justify-content: space-between;
-    background-color: #ebebeb;
+    background-size: cover;
     
 }
 
@@ -43,7 +45,7 @@ padding: 0;
 
 .table{
     text-align: center;
-    margin: auto;
+
 }
 
 #List2{
@@ -52,17 +54,14 @@ padding: 0;
     align-items: center;
 }
 
-/* .thead-dark{
-    text-align: center;
+.btn{
+    background-color: rgb(73, 170, 44);
 }
 
-#well{
-    text-align: center;
-} */
-
-
-
-
-
+.tdBorder{
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+}
 
 

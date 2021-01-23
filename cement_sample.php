@@ -15,16 +15,12 @@ $insert_table_after_conditioning_rheology_test = insert_table_after_conditioning
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
     <title>Цементы</title>
 </head>
 <body> 
 <div id="header">
-    <img src="picture.jpg" class="logo" alt="">
-    <div class="date">
-    <?php  echo date_online()?>
-    </div>
     <form action="" method="POST">
     <button type="submit" name="reagent_sample" class="btn btn-secondary">Внесение реагентов в таблицу</button>
     <button type="submit" name="mud_sample" class="btn btn-secondary">Внесение рецептуры буровых растворов в таблицу</button>
@@ -33,14 +29,14 @@ $insert_table_after_conditioning_rheology_test = insert_table_after_conditioning
 <div id="foundation">
 <div id="left_column"> 
     <form action="" method="POST" id="List2">
-        <table class="table">
+        <table class="table table-bordered" >
             <thead>   
                     <th colspan="5">
                         Параметры
                     </th>
             </thead>
             <tbody>
-                <tr class="thead-dark">
+                <tr>
                     <th colspan="5">
                         Скважинные условия
                     </th>
@@ -131,9 +127,9 @@ $insert_table_after_conditioning_rheology_test = insert_table_after_conditioning
                 </tr>
             </tbody>
         </table>
-        <table class="table">
+        <table class="table table-bordered">
             <tbody id="tr1">
-                    <tr class="thead-dark">
+                    <tr>
                         <th colspan="5">
                             Состав раствора
                         </th>
@@ -180,7 +176,7 @@ $insert_table_after_conditioning_rheology_test = insert_table_after_conditioning
                     </tr>
         </table>
         <table class="table">
-                    <tr class="thead-dark">
+                    <tr>
                         <th colspan="3">
                             Результаты тестов
                         </th>
@@ -285,23 +281,6 @@ $insert_table_after_conditioning_rheology_test = insert_table_after_conditioning
                             </div>
                         </td>
                     </tr>
-                    <!-- <tr>
-                        <td>
-                            <label for="fluidloss_gost">Водоотдача</label>
-                        </td>
-                        <td>
-                            <div class="form-row">
-                                <div class="col">
-                                    <input type="text" name="fluidloss_gost" size="1px" class="form-control">
-                                </div>
-                                <div class="col">
-                                    <select form="List2" name ="unit_fluidloss_gost" class="custom-select">
-                                        <option>мл</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </td>
-                    </tr> -->
                     <tr>
                         <td>
                             <label for="bend_gost">Предел прочности на изгиб за 24 часа</label>
@@ -337,7 +316,7 @@ $insert_table_after_conditioning_rheology_test = insert_table_after_conditioning
                         </td>
                     </tr>
         </table>
-        <table class="table">
+        <table class="table table-bordered">
             <tr>
                 <th colspan="2">API</th>
             </tr>
@@ -503,9 +482,9 @@ $insert_table_after_conditioning_rheology_test = insert_table_after_conditioning
                         </td>
                     </tr>
         </table>
-        <table class="table">
+        <table class="table table-bordered">
             <tbody>
-                <tr class="thead-dark">
+                <tr>
                     <th colspan="9">
                         Реологические характеристики до кондиционирования
                     </th>
@@ -604,7 +583,7 @@ $insert_table_after_conditioning_rheology_test = insert_table_after_conditioning
                         </div>
                     </td>
                 </tr>
-                <tr class="thead-dark">
+                <tr>
                     <th colspan="9">
                         Реологические характеристики после кондиционирования
                     </th>
